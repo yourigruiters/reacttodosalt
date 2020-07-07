@@ -1,0 +1,71 @@
+.todo {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.todo:nth-child(even) {
+	background-color: #e8f0fe;
+}
+
+.todo img {
+	width: 16px;
+	margin-right: 5px;
+}
+
+.todo .todo__content {
+	width: 100%;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.todo .todo__content:hover > .todo__title {
+	text-decoration: line-through;
+}
+
+.todo .todo__content__info {
+	display: flex;
+	font-size: 11px;
+	line-height: 16px;
+	color: #95a5a6;
+}
+
+.todo .todo__content__info article {
+	display: flex;
+	margin-right: 20px;
+}
+
+.todo .todo__buttons {
+	width: 150px;
+}
+
+.todo .todo__buttons button {
+	width: 100%;
+	margin-bottom: 4px;
+	background-color: #e67e22;
+}
+
+.todo .todo__buttons button:hover {
+	background-color: #d35400;
+}
+
+.todo .todo__buttons button.todo__buttons--remove {
+	margin-bottom: 0px;
+	background-color: #e74c3c;
+}
+
+.todo .todo__buttons button..todo__buttons--remove:hover {
+	background-color: #c0392b;
+}
+
+.todo__title {
+	font-size: 24px;
+	color: #2980b9;
+	margin-bottom: 4px;
+}
+
+.todo__description {
+	margin-top: 5px;
+	font-size: 14px;
+	color: #bdc3c7;
+}

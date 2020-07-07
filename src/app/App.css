@@ -1,0 +1,16 @@
+.application {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	margin-top: 25px;
+}
+
+@media only screen and (min-width: 950px) {
+	.application {
+		justify-content: space-between;
+		margin-top: 50px;
+	}
+}
